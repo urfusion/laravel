@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>::.Fabmap.::</title>
+
+<!--responsive-meta-here-->
+<meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0,width=device-width, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!--responsive-meta-end-->
+
+<!--style-css-here-->
+<link rel="stylesheet" href="css/style.css">
+<!--style-css-end-->
+
+<!--responsive-css-here-->
+<link rel="stylesheet" href="css/responsive.css">
+<!--responsive-css-end-->
+
+<!--slider-css-here-->
+<link rel="stylesheet" href="css/flexslider.css">
+<!--slider-css-end-->
+
+<link rel="stylesheet" href="css/skins.css">
+<link rel="stylesheet" href="css/jquery.jcarousel.css">
+
+<!--defult-js-here-->
+<script type="text/javascript" src="js/1.7.2.jquery.min.js"></script>
+<!--defult-js-end-->
+
+<!--slider-js-here-->
+<script type="text/javascript">
+$(window).load(function() {
+ $('.flexslider').flexslider();
+});
+</script>
+<!--slider-js-end-->
+
+<!--ie-support-html5-tag-js-here-->
+<script type="text/javascript" src="js/html5.js"></script>
+<!--ie-support-html5-tag-js-end-->
+
+
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<!--script type="text/javascript" src="js/jquery-1.2.3.pack.js"></script-->
+<script type="text/javascript" src="js/jquery.jcarousel.pack.js"></script>
+<script type="text/javascript">
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+
+   jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 3,
+        wrap: 'last',
+		scroll: 1,
+		initCallback: mycarousel_initCallback
+    });
+	
+	 jQuery('#mycarousel2').jcarousel({
+        auto: 3,
+        wrap: 'last',
+		scroll: 1,
+		initCallback: mycarousel_initCallback
+    });
+	
+    jQuery('#mycarousel3').jcarousel({
+        auto: 3,
+        wrap: 'last',
+		scroll: 1,
+		initCallback: mycarousel_initCallback
+    });
+	
+	jQuery('#mycarousel4').jcarousel({
+        auto: 3,
+        wrap: 'last',
+		scroll: 1,
+		initCallback: mycarousel_initCallback
+    });
+	
+     jQuery('#mycarousel5').jcarousel({
+        auto: 3,
+        wrap: 'last',
+		scroll: 1,
+		initCallback: mycarousel_initCallback
+    });
+	
+});
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<!--menu-toggel-script-here-->
+<script type="text/javascript">
+  $(document).ready(function() {
+  $('.menu_toggel').click(function() {
+  $('.category_nav').slideToggle('fast');
+  });
+ });
+</script> 
+<!--menu-toggel-script-end-->
+
+</head>
+<body>
+<div class="site_content">
+
+<!--header-content-here-->
+<header>
+ <div class="top_header">
+  <div class="container">
+  <!--logo-here-->
+  <div class="logo"><a href="#"><img src="images/logo.png"/></a></div>
+  <!--logo-end-->
+   
+  <div class="top_head_right">
+   <div class="sign_lang_box">
+    <ul>
+	  <li class="lang"><a href="#"><img src="images/lang_icon.png"/></a></li>
+	  <li class="sign"><a href="#">Sign in</a></li>
+	</ul>
+   </div>    
+
+   <div class="head_social_box">
+     <ul>
+	   <li><a href="#"><img src="images/icon1.png"/></a></li>
+	   <li><a href="#"><img src="images/icon2.png"/></a></li>
+	   <li><a href="#"><img src="images/icon3.png"/></a></li>
+	   <li><a href="#"><img src="images/icon4.png"/></a></li>
+	   <li><a href="#"><img src="images/icon5.png"/></a></li>
+	 </ul>
+   </div>
+   
+   
+   
+  </div> 
+   
+  </div>
+ </div>
+  
+ <div class="bottom_header">
+  <div class="bottom_header_inner">
+   <div class="container">
+   <a class="menu_toggel">Menu</a>
+    <div class="category_nav">
+	 <form>
+      <ul>
+	   <li class="input_text_box"><input type="text" placeholder="Shop Name"/></li>
+	   <li class="cat_menu"><select><option>Shop Type</option></select></li>
+	   <li class="cat_menu"><select><option>Product / Service</select></option></li>
+	   <li class="cat_menu"><select><option>District</select></option></li>
+	   <li class="cat_menu"><select><option>Region</select></option></li>
+	   <li class="cat_menu"><select><option>Landmark</select></option></li>
+	   <li class="submit_button"><input type="submit" value="Search"/></li>
+	   </ul>
+     </form>
+	</div>  
+   </div> 
+  </div> 
+ </div> 
+ 
+</header>
+<!--header-content-end-->
+
+<div class="warper">
+
+<!--shop-closure-content-here-->
+<div class="page_content shop_closure form_bg">
+ <div class="container">
+  <div class="bredcrumb_menu">
+   <ul>
+     <li><span>Home</span></li>
+	 <li><span>Edit Shop Information</span></li>
+	 <li><a href="#">Shop Closure</a></li>
+   </ul>  
+  </div> 
+  
+  <div class="inner_head_title">
+	<h1>Shop Closure</h1>
+  </div>   
+  
+  <div class="inner_page_content_bg">
+   <form>
+    <h2>Shop Information</h2> 
+   <div class="two_fild_row">
+	 <div class="fild_box left_fild">
+	  <div class="fild_box_inner">
+	   <label>Shop name <sup>*</sup><span>(English)</span></label>
+	   <div class="fild input_fild_box">
+	    <input type="text"/>
+	   </div>
+	  </div>
+	  </div>
+	  
+	 <div class="fild_box right_fild">
+	  <div class="fild_box_inner">
+	   <label>Shop name <span>(Chinese)</span></label>
+	   <div class="fild input_fild_box">
+	    <input type="text"/>
+	   </div>
+	  </div>
+	 </div>
+	 
+	</div>
+   
+    <div class="two_fild_row">
+	 
+	 <div class="fild_box left_fild">
+	  <div class="fild_box_inner">
+	   <label>Shop Email</label>
+	   <div class="fild input_fild_box">
+	    <input type="text"/>
+	   </div>
+	  </div>
+	  </div>
+	  
+	 <div class="fild_box right_fild">
+	  <div class="fild_box_inner">
+	   <label>Telephone </label>
+	   <div class="fild input_fild_box">
+	    <input type="text"/>
+	   </div>
+	  </div>
+	 </div>
+	 
+	</div>
+    
+	<div class="two_fild_row">
+	 
+	 <div class="fild_box left_fild">
+	  <div class="fild_box_inner">
+	   <label>Telephone 2</label>
+	   <div class="fild input_fild_box">
+	    <input type="text"/>
+	   </div>
+	  </div>
+	  </div>
+	  
+	 <div class="fild_box right_fild">
+	  <div class="fild_box_inner">
+	   <label>Fax</label>
+	   <div class="fild input_fild_box">
+	    <input type="text"/>
+	   </div>
+	  </div>
+	 </div>
+	 
+	</div>
+	
+    <div class="two_fild_row">
+	 
+	 <div class="fild_box left_fild">
+	  <div class="fild_box_inner">
+	   <label>Region <sup>*</sup></label>
+	   <div class="fild select_fild_box">
+	    <select>
+		  <option></option>
+		</select>
+	   </div>
+	  </div>
+	 </div>
+   
+     <div class="fild_box right_fild">
+	  <div class="fild_box_inner">
+	   <label>District  <sup>*</sup></label>
+	   <div class="fild select_fild_box">
+	    <select>
+		  <option></option>
+		</select>
+	   </div>
+	  </div>
+	 </div>
+    </div>
+   
+	<div class="two_fild_row">
+	 
+	 <div class="fild_box left_fild">
+	  <div class="fild_box_inner">
+	   <label>Address <sup>*</sup><span>(English)</span></label>
+	   <div class="fild textarea_fild_box">
+	     <textarea></textarea>
+	   </div>
+	  </div>
+	 </div>
+   
+     <div class="fild_box right_fild">
+	  <div class="fild_box_inner">
+	   <label><p>Or</p>Address   <sup>*</sup><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(Chinese)</span></label>
+	   <div class="fild textarea_fild_box">
+	     <textarea></textarea>
+	   </div>
+	  </div>
+	 </div>
+    </div>
+   
+   <div class="submit_button_bg">
+	 <input type="submit" value="Submit"/>
+	</div>
+	
+   </form>
+  </div>
+  
+ </div>
+</div>
+<!--shop-closure-content-end-->
+</div>
+
+<!--footer-content-here-->
+<footer>
+<div class="top_footer">
+ <div class="container">
+ <div class="col_lg4">
+  <div class="col1">
+   <h1>Collection</h1>
+   <ul>
+     <li><a href="#">Woman (1725)</a></li>
+	 <li><a href="#">Men (635)</a></li>
+	 <li><a href="#">Woman (1725)</a></li>
+	 <li><a href="#">Kids (2514)</a></li>
+	 <li><a href="#">Comming Soon (76)</a></li>
+	</ul>
+   </div> 
+    <div class="col1">
+   <h1>site</h1>
+   <ul>
+     <li><a href="#">Terms of Service </a></li>
+	 <li><a href="#">Privacy Policy </a></li>
+	 <li><a href="#">Copyright Policy </a></li>
+	 <li><a href="#">Press Kit </a></li>
+	 <li><a href="#">Press Kit </a></li>
+	</ul>
+   </div> 
+   <div class="col1">
+   <h1>Shop</h1>
+   <ul>
+     <li><a href="#">About us</a></li>
+	 <li><a href="#">Shipping </a></li>
+	 <li><a href="#">Shipping </a></li>
+	 <li><a href="#">Contact </a></li>
+	 <li><a href="#">Update shop information</a></li>
+	</ul>
+   </div> 
+  <div class="col1">
+  <h1>Newsletter Sign Up</h1>
+  <form>
+    <input type="text" placeholder=""/>
+    <input type="submit" value="GO"/>
+  </form>
+  
+  <div class="footer_social">
+   <ul>
+    <li><a href="#"><img src="images/icon1.png"/></a></li>
+	<li><a href="#"><img src="images/icon2.png"/></a></li>
+	<li><a href="#"><img src="images/icon3.png"/></a></li>
+	<li><a href="#"><img src="images/icon4.png"/></a></li>
+	<li><a href="#"><img src="images/icon5.png"/></a></li>
+   </ul>
+  </div>
+  
+  
+  
+  </div> 
+ </div>
+  
+ 
+ 
+ </div>
+</div>
+ 
+<div class="bottom_footer">
+ <div class="container">
+  <p>© 2015  fabmap. All Rights Reserved. </p>
+ </div>
+</div> 
+ 
+ 
+</footer>
+<!--footer-content-end-->
+
+</div>
+</body>
+</html>
